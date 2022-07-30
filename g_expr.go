@@ -18,7 +18,6 @@ func Match(exprRule string, sourceData map[string]interface{}) (bool, error) {
 	if err != nil {
 		return false, fmt.Errorf("parse exprRule err: %w", err)
 	}
-
 	//fset := token.NewFileSet()
 	//ast.Print(fset, exprAst)
 

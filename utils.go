@@ -31,8 +31,9 @@ func convToString(v interface{}) (string, error) {
 		return strconv.Itoa(int(v.(int32))), nil
 	case int64:
 		return strconv.Itoa(int(v.(int64))), nil
+	default:
+		return "", fmt.Errorf("data: %v convert to string err", v)
 	}
-	return "", fmt.Errorf("data: %v convert to string err", v)
 }
 
 func trimQuotes(str string) string {

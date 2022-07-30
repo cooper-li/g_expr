@@ -53,5 +53,6 @@ func InOp(args []ast.Expr, sourceData map[string]interface{}) (bool, error) {
 			return true, nil
 		}
 	}
+
 	return false, nil
 }

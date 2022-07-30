@@ -70,4 +70,5 @@ func cmpInt64(x, y int64, op token.Token) (bool, error) {
 	default:
 		return false, fmt.Errorf("not support number op: %v", op)
 	}
+	return false, fmt.Errorf("not support number op: %v", op)
 }

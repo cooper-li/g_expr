@@ -11,6 +11,7 @@ type rule struct {
 }
 
 func TestMatch(t *testing.T) {
+
 	ruleList := []rule{
 		{
 			data: map[string]interface{}{
